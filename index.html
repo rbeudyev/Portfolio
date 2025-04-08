@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timothé Gace Bordan - Développeur Web Freelance</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -30,34 +30,162 @@
         <div class="hero">
             <div class="hero-content">
                 <h1>Timothé Gace Bordan</h1>
-                <h2>Développeur Web Freelance</h2>
-                <h3>Je crée des sites web qui convertissent</h3>
-                <p>Spécialisé dans la création de sites vitrines performants et le réferencement naturel pour les petites entreprises entre Perpignan et Montpellier</p>
+                <h2>Deuxième année à l'EPSI de Montpellier</h2>
+                <h3>BTS SIO - Option SLAM</h3>
                 <div class="hero-buttons">
-                    <a href="#contact" class="cta-button">Travaillons ensemble</a>
-                    <a href="#services" class="secondary-button">Découvrir mes services</a>
+                    <a href="CV.pdf" class="cta-button" target="_blank">Voir mon CV</a>
+                    <a href="tableau.xlsx" class="secondary-button" target="_blank">Tabeau de compétences</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <h2>Mes Services</h2>
+    <section id="a-propos" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>À Propos de Moi</h2>
+                <p class="about-intro">Passionné par le développement web et les nouvelles technologies, je suis un étudiant en BTS SIO SLAM à l'EPSI de Montpellier. Mon parcours est guidé par une volonté constante d'apprentissage et d'innovation dans le domaine du développement web.</p>
+                <p class="about-description">Spécialisé dans le développement front-end et back-end, je m'efforce de créer des solutions web modernes et performantes. Mon approche combine une attention particulière à l'expérience utilisateur avec une expertise technique solide. Je suis constamment à la recherche de nouveaux défis pour développer mes compétences et créer des applications web innovantes.</p>
+            </div>
+            <div class="about-image-container">
+                <img src="images/profile.jpg" alt="Timothé Gace Bordan" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="bts-presentation">
+        <h2>Le BTS SIO</h2>
+        <p>Le Brevet de Technicien Supérieur Services Informatiques aux Organisations (BTS SIO) est un diplôme reconnu par l'état de niveau Bac+2. Il remplace depuis septembre 2011 l'ancien BTS Informatique de Gestion. Le BTS SIO propose deux spécialités :</p>
+        
+        <div class="specialites-container">
+            <div class="specialite">
+                <h3>SLAM - Solutions Logicielles et Applications Métiers</h3>
+                <p>La spécialité SLAM forme des professionnels capables de :</p>
+                <ul>
+                    <li>Développer des applications informatiques</li>
+                    <li>Créer des solutions logicielles</li>
+                    <li>Gérer des bases de données</li>
+                    <li>Concevoir des interfaces utilisateur</li>
+                    <li>Assurer la maintenance des applications</li>
+                </ul>
+            </div>
+            <div class="specialite">
+                <h3>SISR - Solutions d'Infrastructure, Systèmes et Réseaux</h3>
+                <p>La spécialité SISR forme des professionnels capables de :</p>
+                <ul>
+                    <li>Administrer des systèmes et réseaux</li>
+                    <li>Sécuriser les infrastructures</li>
+                    <li>Gérer la maintenance des équipements</li>
+                    <li>Assurer la disponibilité des services</li>
+                    <li>Superviser les réseaux d'entreprise</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="parcours-pro">
+        <h2>Mon Parcours Professionnel</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Micro-Entreprise</h3>
+                    <p class="timeline-organization">Développeur Web Freelance</p>
+                    <p>Création et développement de sites web sur mesure pour différents clients. Gestion de projets, développement front-end et back-end, et maintenance des applications.</p>
+                    <div class="timeline-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Stage de 2ème année</h3>
+                    <p class="timeline-organization">Entreprise XYZ</p>
+                    <p>Développement d'applications web et maintenance de systèmes informatiques. Participation à des projets d'équipe et mise en place de solutions techniques.</p>
+                    <div class="timeline-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Stage de 1ère année</h3>
+                    <p class="timeline-organization">Entreprise ABC</p>
+                    <p>Découverte du développement web et participation à des projets concrets. Apprentissage des bonnes pratiques et des outils de développement.</p>
+                    <div class="timeline-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2>Parcours Scolaire</h2>
+        <div class="services-card">
+            <div class="service-card">
+                    <h3>BTS SIO</h3>
+                    <p>EPSI Montpellier</p>
+                    <span class="date">2024 - Aujourd'hui</span>
+                </div>
+            </div>
+            <div class="services-card">
+                <div class="service-card">
+                    <h3>Baccalauréat Générale - Maths/Physique</h3>
+                    <p>Lycée Pablo Picasso</p>
+                    <span class="date">2021-2024</span>
+                </div>
+            </div>
+            <div class="services-card">
+                <div class="service-card">
+                    <h3>Brevet du Collège</h3>
+                    <p>Collège François Mitterand</p>
+                    <span class="date">2017-2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
         <div class="services-grid">
             <div class="service-card">
-                <h3>Sites Vitrines Professionnels</h3>
+                <img src="images/projet1.jpg" alt="Projet 1" class="projet-image">
+                <h3>Projet n°1</h3>
                 <p>Création de sites web élégants et performants pour représenter votre entreprise en ligne</p>
             </div>
             <div class="service-card">
-                <h3>Développement Web</h3>
+                <img src="images/projet2.jpg" alt="Projet 2" class="projet-image">
+                <h3>Projet n°2</h3>
                 <p>Sites web sur mesure optimisés pour la conversion et adaptés à vos besoins</p>
             </div>
             <div class="service-card">
-                <h3>Référencement Naturel (SEO)</h3>
+                <img src="images/projet3.jpg" alt="Projet 3" class="projet-image">
+                <h3>Projet n°3</h3>
                 <p>Optimisation de votre visibilité sur les moteurs de recherche pour attirer plus de clients</p>
             </div>
             <div class="service-card">
-                <h3>Maintenance Web</h3>
+                <img src="images/projet4.jpg" alt="Projet 4" class="projet-image">
+                <h3>Projet n°4</h3>
                 <p>Suivi régulier, mises à jour et support technique pour garantir la performance de votre site</p>
             </div>
         </div>
@@ -194,4 +322,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
