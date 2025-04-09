@@ -1275,7 +1275,7 @@ nav a {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     gap: 4rem;
     position: relative;
     z-index: 1;
@@ -1306,17 +1306,23 @@ nav a {
     box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
 }
 
-.about-intro {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.about-description {
+.about-text p {
     font-size: 1.1rem;
-    color: var(--text-secondary);
     line-height: 1.8;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.about-intro {
+    font-size: 1.2rem !important;
+    color: var(--text-primary) !important;
+    font-weight: 500;
 }
 
 .about-image-container {
@@ -1369,12 +1375,12 @@ nav a {
         font-size: 2.5rem;
     }
 
-    .about-intro {
-        font-size: 1.2rem;
+    .about-text p {
+        font-size: 1rem;
     }
 
-    .about-description {
-        font-size: 1rem;
+    .about-intro {
+        font-size: 1.1rem !important;
     }
 
     .about-image-container {
@@ -1387,12 +1393,12 @@ nav a {
         font-size: 2rem;
     }
     
-    .about-intro {
-        font-size: 1.1rem;
+    .about-text p {
+        font-size: 0.95rem;
     }
     
-    .about-description {
-        font-size: 0.95rem;
+    .about-intro {
+        font-size: 1rem !important;
     }
     
     .about-image-container {

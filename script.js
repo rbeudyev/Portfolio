@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Événement de clic sur le burger menu
     burgerMenu.addEventListener('click', toggleMenu);
-
+    
     // Fermer le menu quand on clique sur un lien
     navLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
