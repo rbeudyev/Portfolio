@@ -1864,3 +1864,203 @@ nav a {
     }
 }
 
+/* Styles pour la section Veilles Technologiques */
+.veilles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.veilles-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(124, 58, 237, 0.05) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.veille-card {
+    background: var(--card-bg);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    z-index: 1;
+}
+
+.veille-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, transparent 100%);
+    z-index: 0;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.veille-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(6, 182, 212, 0.2);
+}
+
+.veille-card:hover::before {
+    opacity: 1;
+}
+
+.veille-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.veille-card:hover .veille-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.veille-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1rem;
+}
+
+.veille-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+.veille-content {
+    position: relative;
+    z-index: 1;
+}
+
+.veille-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.veille-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.veille-content li {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    transition: transform 0.3s ease;
+}
+
+.veille-content li:hover {
+    transform: translateX(5px);
+    color: var(--text-primary);
+}
+
+.veille-content li::before {
+    content: '•';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+.veille-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    padding: 0.8rem 1.5rem;
+    background: rgba(6, 182, 212, 0.1);
+    border-radius: 50px;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.veille-link i {
+    margin-left: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.veille-link:hover {
+    background: rgba(6, 182, 212, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(6, 182, 212, 0.2);
+}
+
+.veille-link:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+    .veilles-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .veille-card {
+        padding: 2rem;
+    }
+
+    .veille-icon {
+        font-size: 2.5rem;
+    }
+
+    .veille-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .veille-content p {
+        font-size: 1rem;
+    }
+
+    .veille-content li {
+        font-size: 0.95rem;
+    }
+
+    .veille-link {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
