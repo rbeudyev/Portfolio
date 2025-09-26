@@ -1,399 +1,311 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothé Gace Bordan - Développeur Web Freelance</title>
+    <title>Portfolio de [Ton Nom]</title>
+
+    <!-- Lien Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <button class="burger-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
-    <div class="layout">
-        <aside class="sidebar" role="navigation" aria-label="Navigation principale">
-            <div class="sidebar-inner" role="dialog" aria-modal="true">
-                <div class="sidebar-profile">
-                    <div class="avatar">
-                        <img src="images/profile.jpg" alt="Photo de profil" />
-                    </div>
-                    <div class="profile-name">TGB</div>
-                    <div class="profile-socials">
-                        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i><span>Accueil</span></a></li>
-                        <li><a href="index.html#about"><i class="fas fa-user"></i><span>À propos</span></a></li>
-                        <li><a href="index.html#bts"><i class="fas fa-graduation-cap"></i><span>BTS</span></a></li>
-                        <li><a href="index.html#parcours-pro"><i class="fas fa-briefcase"></i><span>Parcours professionnel</span></a></li>
-                        <li><a href="index.html#education"><i class="fas fa-book"></i><span>Parcours scolaire</span></a></li>
-                        <li><a href="index.html#projets"><i class="fas fa-layer-group"></i><span>Projets</span></a></li>
-                        <li><a href="index.html#competences"><i class="fas fa-cogs"></i><span>Compétences</span></a></li>
-                        <li><a href="index.html#veilles"><i class="fas fa-newspaper"></i><span>Veilles</span></a></li>
-                        <li><a href="index.html#contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
-                    </ul>
-                </nav>
-                <div class="sidebar-footer">© 2024 TGB</div>
+    <!-- Navbar fixe -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#presentation" class="logo">[Ton Nom]</a>
+                
+                <!-- Menu hamburger pour mobile -->
+                <button class="hamburger" id="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#bts-sio">BTS SIO</a></li>
+                    <li><a href="#parcours-pro">Parcours Pro</a></li>
+                    <li><a href="#parcours-scolaire">Parcours Scolaire</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#veille">Veille</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </aside>
-        <div class="sidebar-overlay" hidden></div>
-        <main class="content">
-            <section id="accueil">
-                <div class="section-inner">
-                    <div class="hero">
-                        <div class="hero-content">
-                            <h1>Timothé Gace Bordan</h1>
-                            <h2>Deuxième année à l'EPSI de Montpellier</h2>
-                            <h3>BTS SIO - Option SLAM</h3>
-                            <div class="hero-buttons">
-                                <a href="CV.pdf" class="cta-button" target="_blank">Voir mon CV</a>
-                                <a href="tableau.xlsx" class="secondary-button" target="_blank">Tabeau de compétences</a>
-                            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Présentation -->
+        <section id="presentation" class="section">
+            <div class="container presentation-grid">
+                <!-- Texte -->
+                <div class="presentation-text">
+                    <h1>Présentation</h1>
+                    <p>Bonjour, je m'appelle [Ton Nom], étudiant en BTS SIO option SLAM. Passionné par le développement web et les nouvelles technologies, je réalise des projets concrets en freelance et dans le cadre de mes stages.</p>
+                    <p>Je souhaite développer mes compétences en développement web et mobile et construire un portfolio professionnel pour présenter mes réalisations.</p>
+                </div>
+        
+                <!-- Image -->
+                <div class="presentation-image">
+                    <img src="chemin/vers/image.jpg" alt="Illustration ou photo de [Ton Nom]">
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- BTS SIO -->
+        <section id="bts-sio" class="section">
+            <div class="container">
+                <h1>BTS SIO</h1>
+                <p>
+                    Le BTS Services Informatiques aux Organisations (SIO) est une formation de deux ans qui prépare les étudiants à devenir des professionnels compétents dans le domaine de l’informatique et du développement. 
+                    Il permet d’acquérir à la fois des compétences techniques solides et une compréhension approfondie des besoins des entreprises. 
+                    Les étudiants apprennent à gérer des projets informatiques, à concevoir et développer des solutions logicielles, à administrer des systèmes et réseaux, tout en respectant les normes de sécurité et de qualité.
+                </p>
+        
+                <div class="bts-cards">
+                    <!-- Carte SLAM -->
+                    <div class="bts-card">
+                        <h2>SLAM</h2>
+                        <p>
+                            La spécialité SLAM (Solutions Logicielles et Applications Métiers) se concentre sur le développement d'applications web, mobiles et bureautiques adaptées aux besoins des organisations. 
+                            Les étudiants y apprennent à concevoir des bases de données performantes, à développer des interfaces utilisateurs ergonomiques, à créer des fonctionnalités métiers sur mesure et à assurer la maintenance des applications. 
+                            Ce parcours met également l’accent sur la collaboration avec les clients et les utilisateurs pour garantir la qualité des solutions développées.
+                        </p>
+                    </div>
+        
+                    <!-- Carte SISR -->
+                    <div class="bts-card">
+                        <h2>SISR</h2>
+                        <p>
+                            La spécialité SISR (Solutions d’Infrastructure, Systèmes et Réseaux) forme des professionnels capables de gérer l’infrastructure technique des entreprises. 
+                            Les étudiants y apprennent à installer et administrer des serveurs, configurer des réseaux sécurisés, superviser des systèmes informatiques et assurer la continuité et la sécurité des services numériques. 
+                            Ils sont également formés à diagnostiquer les problèmes, mettre en place des solutions efficaces et documenter les processus pour faciliter la maintenance et l’évolution des infrastructures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Parcours professionnel -->
+        <section id="parcours-pro" class="section">
+            <div class="container">
+                <h1>Parcours professionnel</h1>
+        
+                <div class="timeline">
+                    <!-- Micro-Entreprise -->
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h2>Micro-Entreprise</h2>
+                            <span class="date">2025 - Aujourd'hui</span>
+                            <p>Freelance en tant que développeur web full-stack</p>
+                        </div>
+                    </div>
+        
+                    <!-- Stage 2ème année -->
+                    <div class="timeline-item right">
+                        <div class="content">
+                            <h2>Stage 2ᵉ année</h2>
+                            <span class="date">Janvier - Février 2026</span>
+                            <p>Développement web</p>
+                        </div>
+                    </div>
+        
+                    <!-- CEMOI -->
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h2>CEMOI</h2>
+                            <span class="date">Mai - Juin 2025</span>
+                            <p>Développement d'une application web full-stack</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        
 
-            <section id="about" class="about-section">
-                <div class="section-inner">
-                    <div class="about-container">
-                        <div class="about-content">
-                            <h2>À Propos de Moi</h2>
-                            <div class="about-text">
-                                <p class="about-intro">Passionné par le développement web et les nouvelles technologies, je suis un étudiant en BTS SIO SLAM à l'EPSI de Montpellier. Mon parcours dans le monde du développement web a commencé il y a plusieurs années.</p>
-                                
-                                <p>En tant que développeur web, je me spécialise dans la création d'applications web modernes et performantes, avec une attention particulière à l'expérience utilisateur.</p>
-                            </div>
+        <!-- Parcours scolaire -->
+        <section id="parcours-scolaire" class="section">
+            <div class="container">
+                <h1>Parcours scolaire</h1>
+        
+                <div class="timeline-school">
+                    <!-- BTS SIO -->
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h2>BTS SIO SLAM</h2>
+                            <span class="date">2024 - 2026</span>
+                            <p>[Nom de l'établissement]</p>
                         </div>
-                        <div class="about-image-container">
-                            <img src="images/profile.jpg" alt="Timothé Gace Bordan" class="about-image">
+                    </div>
+        
+                    <!-- Baccalauréat -->
+                    <div class="timeline-item right">
+                        <div class="content">
+                            <h2>Baccalauréat</h2>
+                            <span class="date">2024</span>
+                            <p>[Nom de l'établissement]</p>
                         </div>
+                    </div>
+        
+                    <!-- Autres diplômes éventuels -->
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Projets -->
+        <section id="projets" class="section">
+            <div class="container">
+                <h1>Projets</h1>
+                <p>Mes projets scolaires, stages et personnels.</p>
+        
+                <div class="projects-grid">
+                    <!-- Carte Projet 1 -->
+                    <div class="project-card">
+                        <h2>Projet 1</h2>
+                        <p>Description du projet...</p>
+                        <p><strong>Technologies :</strong> ...</p>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+        
+                    <!-- Carte Projet 2 -->
+                    <div class="project-card">
+                        <h2>Projet 2</h2>
+                        <p>Description du projet...</p>
+                        <p><strong>Technologies :</strong> ...</p>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+        
+                    <!-- Carte Projet 3 -->
+                    <div class="project-card">
+                        <h2>Projet 3</h2>
+                        <p>Description du projet...</p>
+                        <p><strong>Technologies :</strong> ...</p>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Compétences -->
+        <section id="competences" class="section">
+            <section id="competences" class="section">
+                <div class="container">
+                    <h1>Compétences</h1>
+            
+                    <!-- Compétences techniques avec icônes -->
+                    <h2>Techniques</h2>
+                    <div class="skills-icons">
+                        <!-- Placeholders pour les icônes -->
+                        <div class="skill-icon-placeholder" title="HTML/CSS"></div>
+                        <div class="skill-icon-placeholder" title="JavaScript"></div>
+                        <div class="skill-icon-placeholder" title="PHP/MySQL"></div>
+                        <div class="skill-icon-placeholder" title="Git"></div>
+                        <div class="skill-icon-placeholder" title="Autre compétence"></div>
+                        <!-- Ajoute d'autres icônes ici -->
+                    </div>
+            
+                    <!-- Compétences transversales -->
+                    <h2>Transversales</h2>
+                    <div class="skills-soft">
+                        <span class="badge">Communication</span>
+                        <span class="badge">Travail en équipe</span>
+                        <span class="badge">Gestion de projet</span>
+                        <span class="badge">Créativité</span>
                     </div>
                 </div>
             </section>
+            
+            
+        </section>
 
-            <section class="bts" id="bts">
-                <div class="section-inner">
-                    <h2>Le BTS SIO</h2>
-                    <p>Le Brevet de Technicien Supérieur Services Informatiques aux Organisations (BTS SIO) est un diplôme reconnu par l'état de niveau Bac+2. Il remplace depuis septembre 2011 l'ancien BTS Informatique de Gestion. Le BTS SIO propose deux spécialités :</p>
-                    
-                    <div class="specialites-container">
-                        <div class="specialite">
-                            <h3>SLAM - Solutions Logicielles et Applications Métiers</h3>
-                            <p>La spécialité SLAM forme des professionnels capables de :</p>
-                            <ul>
-                                <li>Développer des applications informatiques</li>
-                                <li>Créer des solutions logicielles</li>
-                                <li>Gérer des bases de données</li>
-                                <li>Concevoir des interfaces utilisateur</li>
-                                <li>Assurer la maintenance des applications</li>
-                            </ul>
-                        </div>
-                        <div class="specialite">
-                            <h3>SISR - Solutions d'Infrastructure, Systèmes et Réseaux</h3>
-                            <p>La spécialité SISR forme des professionnels capables de :</p>
-                            <ul>
-                                <li>Administrer des systèmes et réseaux</li>
-                                <li>Sécuriser les infrastructures</li>
-                                <li>Gérer la maintenance des équipements</li>
-                                <li>Assurer la disponibilité des services</li>
-                                <li>Superviser les réseaux d'entreprise</li>
-                            </ul>
-                        </div>
+        <!-- Veille technologique -->
+        <section id="veille" class="section">
+            <div class="container">
+                <h1>Veille technologique</h1>
+                <p>Mes sujets de veille et découvertes.</p>
+        
+                <div class="veille-grid">
+                    <!-- Veille 1 -->
+                    <div class="veille-card">
+                        <h2>Veille 1</h2>
+                        <p>Description de la veille 1...</p>
+                        <a href="#" class="veille-link">En savoir plus</a>
+                    </div>
+        
+                    <!-- Veille 2 -->
+                    <div class="veille-card">
+                        <h2>Veille 2</h2>
+                        <p>Description de la veille 2...</p>
+                        <a href="#" class="veille-link">En savoir plus</a>
+                    </div>
+        
+                    <!-- Veille 3 -->
+                    <div class="veille-card">
+                        <h2>Veille 3</h2>
+                        <p>Description de la veille 3...</p>
+                        <a href="#" class="veille-link">En savoir plus</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        
 
-            <section class="parcours-pro" id="parcours-pro">
-                <div class="section-inner">
-                    <h2>Mon Parcours Professionnel</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Micro-Entreprise</h3>
-                                <p class="timeline-organization">Développeur Web Freelance</p>
-                                <p>Création et développement de sites web sur mesure pour différents clients. Gestion de projets, développement front-end et back-end, et maintenance des applications.</p>
-                                <div class="timeline-tags">
-                                    <span>HTML/CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>PHP</span>
-                                    <span>WordPress</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-dot">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Stage de 2ème année</h3>
-                                <p class="timeline-organization">Entreprise XYZ</p>
-                                <p>Développement d'applications web et maintenance de systèmes informatiques. Participation à des projets d'équipe et mise en place de solutions techniques.</p>
-                                <div class="timeline-tags">
-                                    <span>React</span>
-                                    <span>Node.js</span>
-                                    <span>MongoDB</span>
-                                    <span>Git</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-dot">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Stage de 1ère année</h3>
-                                <p class="timeline-organization">CEMOI</p>
-                                <p>Développement d'une application web fullstack pour la gestion des erreurs de flux EDI.</p>
-                                <div class="timeline-tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Bootstrap</span>
-                                </div>
-                                <a href="SN1_C1_Rapport_de_stage_Timothe_GaceBordan.docx" class="timeline-link">Voir le rapport de stage</a>
-                            </div>
-                        </div>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>Pour toute question ou demande, n'hésitez pas à me contacter via ce formulaire.</p>
+        
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
-            </section>
-
-            <section class="education" id="education">
-                <div class="section-inner">
-                    <h2>Parcours Scolaire</h2>
-                    <div class="services-card">
-                        <div class="service-card">
-                                <h3>BTS SIO</h3>
-                                <p>EPSI Montpellier</p>
-                                <span class="date">2024 - Aujourd'hui</span>
-                            </div>
-                        </div>
-                        <div class="services-card">
-                            <div class="service-card">
-                                <h3>Baccalauréat Générale - Maths/Physique</h3>
-                                <p>Lycée Pablo Picasso</p>
-                                <span class="date">2021-2024</span>
-                            </div>
-                        </div>
-                        <div class="services-card">
-                            <div class="service-card">
-                                <h3>Brevet du Collège</h3>
-                                <p>Collège François Mitterand</p>
-                                <span class="date">2017-2021</span>
-                            </div>
-                        </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
-            </section>
-
-            <section id="projets">
-                <div class="section-inner">
-                    <h2>Mes Projets</h2>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <img src="images/projet1.jpg" alt="Projet 1" class="projet-image">
-                            <h3>Projet n°1</h3>
-                            <p>Création de sites web élégants et performants pour représenter votre entreprise en ligne</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="images/projet2.jpg" alt="Projet 2" class="projet-image">
-                            <h3>Projet n°2</h3>
-                            <p>Sites web sur mesure optimisés pour la conversion et adaptés à vos besoins</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="images/projet3.jpg" alt="Projet 3" class="projet-image">
-                            <h3>Projet n°3</h3>
-                            <p>Optimisation de votre visibilité sur les moteurs de recherche pour attirer plus de clients</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="images/projet4.jpg" alt="Projet 4" class="projet-image">
-                            <h3>Projet n°4</h3>
-                            <p>Suivi régulier, mises à jour et support technique pour garantir la performance de votre site</p>
-                        </div>
+        
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
-                </div>
-            </section>
-
-            <section id="competences">
-                <div class="section-inner">
-                    <h2>Compétences Techniques</h2>
-                    <div class="competences-grid">
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <h3>HTML5</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 95%"></div>
-                            </div>
-                            <p>Structure sémantique et accessible</p>
-                        </div>
-                        
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <h3>CSS3</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
-                            <p>Styles modernes et animations</p>
-                        </div>
-                        
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <h3>JavaScript</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                            <p>Interactivité et fonctionnalités dynamiques</p>
-                        </div>
-                        
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3>Responsive Design</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
-                            <p>Adaptation à tous les écrans</p>
-                        </div>
-                        
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <h3>SEO</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 88%"></div>
-                            </div>
-                            <p>Optimisation pour les moteurs de recherche</p>
-                        </div>
-                        
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fas fa-tachometer-alt"></i>
-                            </div>
-                            <h3>Performance Web</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                            <p>Optimisation des temps de chargement</p>
-                        </div>
-                        
-                        <div class="competence-card">
-                            <div class="competence-icon">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <h3>UI/UX Design</h3>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                            <p>Création d'interfaces intuitives</p>
-                        </div>
+        
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                </div>
-            </section>
+        
+                    <button type="submit">Envoyer</button>
+                    <p id="form-message"></p>
+                </form>
+            </div>
+        </section>
+        
+    </main>
 
-            <section id="veilles">
-                <div class="section-inner">
-                    <h2>Mes Veilles Technologiques</h2>
-                    <div class="veilles-grid">
-                        <a href="veille-ia.html" class="veille-card">
-                            <div class="veille-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <h3>Les Menaces de l'IA</h3>
-                            <div class="veille-content">
-                                <p>Analyse des risques potentiels liés à l'intelligence artificielle :</p>
-                                <ul>
-                                    <li>Impact sur l'emploi et l'automatisation</li>
-                                    <li>Questions éthiques et de confidentialité</li>
-                                    <li>Risques de manipulation et de désinformation</li>
-                                    <li>Dépendance technologique</li>
-                                </ul>
-                                <div class="veille-link">
-                                    Voir les articles <i class="fas fa-arrow-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="veille-cybersecurite.html" class="veille-card">
-                            <div class="veille-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3>Cybersécurité et IA</h3>
-                            <div class="veille-content">
-                                <p>Exploration de l'interaction entre IA et sécurité informatique :</p>
-                                <ul>
-                                    <li>Détection des menaces par IA</li>
-                                    <li>Protection contre les attaques automatisées</li>
-                                    <li>Analyse prédictive des vulnérabilités</li>
-                                    <li>Renforcement de la sécurité des systèmes</li>
-                                </ul>
-                                <div class="veille-link">
-                                    Voir les articles <i class="fas fa-arrow-right"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Ton Nom]. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-            <section id="contact">
-                <div class="section-inner">
-                    <h2>Contactez-moi</h2>
-                    <div class="contact-container">
-                        <div class="contact-info">
-                            <h3>Parlons de votre projet</h3>
-                            <p>Vous avez un projet en tête ? Je suis là pour vous aider à le réaliser.</p>
-                            <div class="contact-details">
-                                <div class="contact-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Basé entre Perpignan et Montpellier</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>t.gacbordan@gmail.com</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-phone"></i>
-                                    <span>+33 7 67 25 17 06</span>
-                                </div>
-                            </div>
-                        </div>
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Nom complet</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-btn">Envoyer</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
